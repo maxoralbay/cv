@@ -1,0 +1,211 @@
+%-------------------------
+% Resume in LaTeX
+% Author: Jake Gutierrez
+% Based on: https://github.com/sb2nov/resume
+% License: MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
+
+%----------FONT SETTINGS----------
+% Sans-serif fonts
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% Serif fonts
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+\pagestyle{fancy}
+\fancyhf{} % clear all headers and footers
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Section formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure PDF readability and accessibility
+\pdfgentounicode=1
+
+%-------------------------
+% Custom Commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{document}
+
+%----------HEADER----------
+\begin{center}
+    \textbf{\Huge \scshape Oralbayev Maksat} \\ \vspace{1pt}
+    \small +7707-393-580 $|$ \href{mailto:code.datum@gmail.com}{\underline{code.datum@gmail.com}} $|$
+    \href{https://www.linkedin.com/in/maxoralbay/}{\underline{linkedin.com/in/maxoralbay}} $|$
+    \href{https://github.com/maxoralbay}{\underline{github.com/maxoralbay}}
+\end{center}
+
+%-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Regional Social-Innovative University}{Shymkent, Kazakhstan}
+      {Bachelor's Degree, Physics Teacher}{2014-2016}
+    \resumeSubheading
+      {Engineering and Pedagogical University of Friendship of Peoples}{Shymkent, Kazakhstan}
+      {Bachelor's Degree, Radio Engineering, Electronics, and Telecommunications}{2007-2011}
+  \resumeSubHeadingListEnd
+
+%-----------WORK EXPERIENCE-----------
+\section{Work Experience}
+  \resumeSubHeadingListStart
+   \resumeSubheading
+      {Full-stack Developer}{August 2023 -- Present}
+      {openTrade}{UK, London. Remote}
+      \resumeItemListStart
+        \resumeItem{Developed a trading bot for automating trades using CCXT and pandas-ta.}
+        \resumeItem{Implemented data processing via WebSocket API for real-time market information.}
+        \resumeItem{Created a crypto tracker for portfolio monitoring and market data analysis.}
+        \resumeItem{Worked with smart contracts and blockchain integration using Web3.py.}
+        \resumeItem{Developed and optimized technical analysis-based strategies in Pinescript for TradingView.}
+      \resumeItemListEnd
+
+      \resumeSubheading
+      {Full-stack Developer}{September 2023 -- November 2024}
+      {LLC Isker Group}{Part-time | Remote}
+      \resumeItemListStart
+        \resumeItem{Developed complex Telegram bots using Python and Telegram API.}
+        \resumeItem{Optimized PostgreSQL database, wrote complex SQL queries using SQLAlchemy.}
+        \resumeItem{Participated in REST API development using Django REST Framework (DRF), reducing new module development time by 25\%.}
+        \resumeItem{Configured queue processing via RabbitMQ.}
+        \resumeItem{Designed ETL processes for data extraction, transformation, and loading.}
+        \resumeItem{Performed data parsing and logging, ensuring accuracy and completeness in analytical systems.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Web Developer}{August 2020 -- June 2023}
+      {Devex Service}{Saint Petersburg, Russia}
+      \resumeItemListStart
+        \resumeItem{Full-Stack Backend Development: Maintained and enhanced websites using JavaScript, Python, PHP, and developed microservices using Tarantool and Lua, reducing operational costs by optimizing database and cache systems.}
+        \resumeItem{Microservice and Containerization: Built and managed microservices in Docker for company sites and apps, using Laravel, WordPress API, Django, and No-Code platforms.}
+        \resumeItem{Optimization of Front end development: Led frontend development with NextJS and Vuex, improving interface performance and user engagement.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Full-stack Developer}{July 2019 -- March 2020}
+      {Perfect Systems LLC}{Moscow, Russia}
+      \resumeItemListStart
+        \resumeItem{Led a team developing a parsing system for collecting and analyzing reviews of doctors and medical institutions in the USA.}
+        \resumeItem{Used the Web Scrapy library for automated data collection from various websites.}
+        \resumeItem{Implemented bypass of site protection using proxy rotation.}
+        \resumeItem{Organized delivery of collected data to Django via queues, ensuring efficient processing and storage.}
+      \resumeItemListEnd
+
+      \resumeSubheading
+      {Full-stack Developer}{June 2017 -- May 2019}
+      {Evrika LLC}{Shymkent, Kazakhstan}
+      \resumeItemListStart
+        \resumeItem{Interacted with clients and analyzed requirements: Regularly engaged with clients to understand their goals and ensure alignment of web resources with their needs.}
+        \resumeItem{Programming and development: Wrote and implemented programs necessary for website functionality and support, handling both frontend and backend tasks.}
+        \resumeItem{Website maintenance and troubleshooting: Managed and maintained websites, ensuring optimal performance and resolving arising issues.}
+      \resumeItemListEnd
+  \resumeSubHeadingListEnd
+
+%-----------SOFT SKILLS-----------
+\section{Soft Skills}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    {Project Management, Time Management, Communication, Adaptability, Problem-Solving, Teamwork, Creativity}
+ \end{itemize}
+
+%-----------TECHNICAL SKILLS-----------
+\section{Technical Skills}
+\begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+        \textbf{Programming Languages}{: Python (versions 3.x), PHP, SQL, Lua, PineScript, JavaScript, HTML/CSS, Bash} \\
+        \textbf{Frameworks}{: Django, Flask, FastAPI, Django REST Framework (DRF), Laravel, Nuxt.js, Vue, React, and others} \\
+        \textbf{Databases}{: PostgreSQL, MySQL, Redis, MongoDB} \\
+        \textbf{DevOps}{: Docker, Kubernetes, Jenkins, GitHub, GitLab CI/CD, GCP, VS Code, SourceTree, and more} \\
+        \textbf{Libraries}{: Pandas, NumPy, SQLAlchemy, Pytest, CCXT, pandas-ta, Web3.py, Celery, Redis, aiohttp, asynchronous libraries, and more} \\
+        \textbf{ETL Processes}{: Creation and maintenance for data processing} \\
+        \textbf{Algorithmic Trading}{: Development of trading strategies and bots (PineScript, Alpaca API, WebSocket API)} \\
+        \textbf{Web3 and NFT}{: Working with smart contracts, crypto trackers, blockchain integration} \\
+        \textbf{Logging, Data Processing, and Parsing}{: Optimization of processes for analytical tasks} \\
+        \textbf{Soft Skills}{: Teamwork, code review, task decomposition}
+    }}
+\end{itemize}
+%-------------------------------------------
+%-----------HOBBIES-----------
+\section{Hobbies}
+\begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+        Interest in advanced mathematics and financial mathematics.
+    }}
+\end{itemize}
+
+\end{document}
+-------------------------------------------
